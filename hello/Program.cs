@@ -7,10 +7,7 @@ namespace hello
     {
         static void Main(string[] args)
         {
-            if (args)
-            {
-
-            }
+          
            string name = args[0];
            Console.WriteLine("Witam Swiecie" + name);
 
