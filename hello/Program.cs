@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace hello
 {
@@ -7,15 +6,20 @@ namespace hello
     {
         static void Main(string[] args)
         {
-          
-           string name = args[0];
-           Console.WriteLine("Witam Swiecie" + name);
 
-            //foreach (var item in args)
-            //{
-            //    Console.WriteLine("Witaj " + item);
-            //}
-
+            if (args.Length == 0) 
+            {
+                Console.WriteLine("Witam Swiecie ");
+            }
+            else
+            {
+                //string name = args[0];
+                foreach (var item in args)
+                {
+                    Console.WriteLine("Witaj " + item);
+                     
+                }
+            }
         }
     }
 }
