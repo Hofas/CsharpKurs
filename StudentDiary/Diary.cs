@@ -9,7 +9,7 @@ namespace StudentDiary
     class Diary
     {
         //pola
-        List<float> raitings;
+        List<float> raitings = new List<float>();
         //zachowania
         /// <summary>
         /// Dodaje kolejne oceny
@@ -51,7 +51,22 @@ namespace StudentDiary
         public float GiveMinRating()
         {
             return raitings.Min();
-        }  
+        }
+        /// <summary>
+        /// Czyścci Tablicę ocen
+        /// </summary>
+        public void ClearDiary()
+        {
+            raitings.Clear();
 
+        }
+        /// <summary>
+        /// Zlicza Oceny
+        /// </summary>
+        public float Count()
+        {
+            return raitings.Count();
+
+        }
     }
 }
