@@ -25,9 +25,9 @@ namespace StudentDiary
 
             for (; ; )
             {
-                Console.WriteLine("wprowadz ocenę dla Pawła 1-10:");
-                float raiting;
-                bool result = float.TryParse(Console.ReadLine(), out raiting);
+                Console.Write("wprowadz ocenę dla Pawła 1-10:");
+                //float raiting;
+                bool result = float.TryParse(Console.ReadLine(), out float raiting);
                 
 
                 if (raiting == 11)
