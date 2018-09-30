@@ -8,32 +8,31 @@ namespace Typy
 {
     class Program
     {
+
+        static void GiveName(Diary diary)
+        {
+            diary.Name = "Dzienniczek Stefana";
+        }
+
+        static void IncrementNumber(int number)
+        {
+            number += 1;
+        }
+
         static void Main(string[] args)
         {
-            //Diary diary = new Diary();
-            //diary.AddRaiting(3f);
-            //diary.AddRaiting(2f);
-            //diary.AddRaiting(4.5f);
-
-            //Diary diary2 = new Diary();
-            //Diary diary3 = new Diary();
-            //Diary diary4 = new Diary();
-            //Diary diary5 = new Diary();
-            //Diary diary6 = new Diary();
-
-            //DiaryStatistics stats = diary.ComputeStatistics();
             Diary d1 = new Diary();
             Diary d2 = d1;
-            d1 = new Diary();
-
-
-            d1.Name = "Dzienniczek Marcina";
+            GiveName(d1);
             Console.WriteLine(d2.Name);
+            Console.ReadKey();
+
             int x1 = 4;
-            int x2 = x1;
 
-
-
-         }
+            IncrementNumber(x1);
+            Console.WriteLine(x1);
+            Console.ReadKey();
+            
+        }
     }
 }
