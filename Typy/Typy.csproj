@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8D24486-889B-4A52-A671-5484F7C84938}</ProjectGuid>
+    <ProjectGuid>{32CA16EC-834F-4847-9C0A-F333D1392B16}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>StudentDiary</RootNamespace>
-    <AssemblyName>StudentDiary</AssemblyName>
+    <RootNamespace>Typy</RootNamespace>
+    <AssemblyName>Typy</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,9 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diary.cs" />
+    <Compile Include="DiaryStatistics.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DiaryStatistics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

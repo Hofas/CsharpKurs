@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentDiary
+namespace Typy
 {
     class Diary
     {
@@ -14,6 +14,7 @@ namespace StudentDiary
         }
         //pola
         List<float> raitings;
+        public string Name;
         //zachowania
         /// <summary>
         /// Dodaje kolejne oceny

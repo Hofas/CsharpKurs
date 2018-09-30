@@ -21,7 +21,9 @@ namespace StudentDiary
             float Max = DiaryPawel.GiveMaxRating();
             float Min = DiaryPawel.GiveMinRating();
 
+            
             DiaryPawel.ClearDiary();
+            
 
             for (; ; )
             {
@@ -34,19 +36,25 @@ namespace StudentDiary
                 {
                     break;
                 }
-                if (raiting > 0 && raiting < 10)
+                if (raiting > 0 && raiting < 11)
                 {
                     DiaryPawel.AddRaiting(raiting);
                 }
                 
             }
 
-
-            Console.WriteLine("liczba ocen:" + DiaryPawel.Count());
-            Console.WriteLine("średnia ocen:" + DiaryPawel.CalculateAverage());
-            Console.WriteLine("Najlepsza ocena:" + DiaryPawel.GiveMaxRating());
-            Console.WriteLine("Najgorsza ocena:" + DiaryPawel.GiveMinRating());
+            DiaryStatistics stats = DiaryPawel.ComputeStatistics();
+            //Console.WriteLine("liczba ocen:" + DiaryPawel.Count());
+            //Console.WriteLine("średnia ocen:" + DiaryPawel.CalculateAverage());
+            //Console.WriteLine("Najlepsza ocena:" + DiaryPawel.GiveMaxRating());
+            //Console.WriteLine("Najgorsza ocena:" + DiaryPawel.GiveMinRating());
+            //Console.ReadKey();
+            Console.WriteLine("SRTEDNIA" + stats.avg);
+            Console.WriteLine("lICZba ocen:", stats.count);
             Console.ReadKey();
+            
+
+
         }
 
 
