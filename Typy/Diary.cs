@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Typy
 {
-    class Diary
+     public class Diary
     {
         public Diary()
         {
@@ -43,7 +43,7 @@ namespace Typy
 
         }
 
-        internal DiaryStatistics ComputeStatistics()
+        public DiaryStatistics ComputeStatistics()
         {
             DiaryStatistics stats = new DiaryStatistics();
             float sum = 0;
