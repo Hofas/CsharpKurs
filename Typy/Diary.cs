@@ -31,6 +31,7 @@ namespace Typy
         public float CalculateAverage()
         {
             float sum = 0, avg = 0;
+
             foreach (var raiting in raitings)
             {
                 sum += raiting;
