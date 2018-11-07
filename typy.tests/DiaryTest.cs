@@ -25,7 +25,7 @@ namespace Typy.Tests
 
             DiaryStatistics stats = diary.ComputeStatistics();
 
-            Assert.AreEqual(1f, stats.MaxGrade);
+            Assert.AreEqual(9f, stats.MaxGrade);
       }
     }
 }
