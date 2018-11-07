@@ -21,18 +21,11 @@ namespace Typy.Tests
             diary.AddRaiting(1f);
             diary.AddRaiting(6f);
             diary.AddRaiting(7f);
-            diary.AddRaiting(3f);
+            diary.AddRaiting(1f);
 
             DiaryStatistics stats = diary.ComputeStatistics();
 
-            Assert.AreEqual(9f, stats.MaxGrade);
-
-
-
-
-
-
-
-        }
+            Assert.AreEqual(1f, stats.MaxGrade);
+      }
     }
 }
