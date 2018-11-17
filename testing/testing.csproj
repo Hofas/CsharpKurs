@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E67D7DD8-1CC7-49D6-9AC9-1FC6A85DA0FE}</ProjectGuid>
+    <ProjectGuid>{D70F4E22-2A8C-407D-9910-3047779D695C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Members</RootNamespace>
-    <AssemblyName>Members</AssemblyName>
+    <RootNamespace>testing</RootNamespace>
+    <AssemblyName>testing</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Diary.cs" />
-    <Compile Include="DiaryStatistics.cs" />
-    <Compile Include="NameChangedEventArgs.cs" />
+    <Compile Include="animal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

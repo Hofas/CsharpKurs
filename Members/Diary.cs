@@ -7,14 +7,58 @@ using System.Threading.Tasks;
 namespace Members
 
 {
-     class Diary
+    class Diary
     {
+        //pola
+        public List<float> raitings;
+
+        private string _name;
+        public string Name
+        {
+            get
+            {
+               
+               return _name.ToUpper();
+            }
+            set
+            {
+
+                if (!string.IsNullOrEmpty(value))
+                {
+                    if (_name != value)
+                    {
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.ExistingName = _name;
+                        args.NewName = value;
+                        NameChanged(this, args);
+
+                        
+
+                    }
+
+                    _name = value;
+                }
+            }
+
+        }
+        //delegate field
+        public event NameChangedDelegate NameChanged;
+
+        //delegate type? object?
+        public delegate void NameChangedDelegate(object sender, NameChangedEventArgs args);
+
+
+
+        
+
+
+
+        //konstruktor
         public Diary()
         {
             raitings = new List<float>();
         }
-        //pola
-        List<float> raitings;
+
         //zachowania
         /// <summary>
         /// Dodaje kolejne oceny
@@ -55,7 +99,7 @@ namespace Members
             stats.MaxGrade = raitings.Max();
             stats.MinGrade = raitings.Min();
             stats.count = raitings.Count();
-                                   
+
             return stats;
         }
 
@@ -65,6 +109,7 @@ namespace Members
         /// <returns></returns>
         public float GiveMaxRating()
         {
+
             return raitings.Max();
         }
         /// <summary>
@@ -73,6 +118,7 @@ namespace Members
         /// <returns></returns>
         public float GiveMinRating()
         {
+
             return raitings.Min();
         }
         /// <summary>
@@ -91,5 +137,11 @@ namespace Members
             return raitings.Count();
 
         }
+
+        public delegate float DajMaxa();
+        
+
+        
+
     }
 }

@@ -66,7 +66,9 @@ namespace Typy
         /// <returns></returns>
         public float GiveMaxRating()
         {
+            //int a = (int)raitings[0];
             return raitings.Max();
+            
         }
         /// <summary>
         /// Wyciąga Najniższą ocene
